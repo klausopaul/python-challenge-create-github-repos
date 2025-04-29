@@ -74,7 +74,7 @@ def argument_parser():
 
         repo_desc = ""
         if args.repo_desc is not None:
-            repo_desc = args.repo_desc.title()
+            repo_desc = args.repo_desc[0].title() + args.repo_desc[1:]
 
         if args.repo_visibility is not None:
             repo_visibility = args.repo_visibility.lower()
